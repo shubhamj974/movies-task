@@ -1,0 +1,41 @@
+
+body{
+    background-color: $pri-col;
+}
+
+.moviesHeader{
+    .navbar-light{
+        background-color: transparent !important;
+        .navbar-brand{
+            display: inline-block;
+            width: 150px;
+            padding: 0;
+        }
+    }
+}
+
+.moviesPost{
+    .card-footer{
+        background-color: $sec-col;
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+        @include flexCenter(space-between);
+        .pri-heading{
+            font-size: 1.5rem;
+            color : $white-col;
+        }
+        .rating {
+            padding: 1px 8px;
+            font-size: 12px;
+            border-radius: 2px;
+            color: $dark-col;
+            font-weight: 700;
+        }
+    }
+    .img-fluid{
+        height: 650px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
